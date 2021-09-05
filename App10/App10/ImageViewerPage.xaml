@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:App10.Widget"
+             x:Class="App10.ImageViewerPage"             
+             Title="Vista Previa"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <local:PinchToZoomContainer>
+            <Image x:Name="img"/>
+        </local:PinchToZoomContainer>
+        <ImageButton BackgroundColor="Transparent" Source="ic_back_dark.png" CornerRadius="100" 
+                                 VerticalOptions="Start" Margin="10,20" HorizontalOptions="Start" 
+                                 HeightRequest="30" WidthRequest="30"      
+                                 Clicked="ImageButton_Clicked"/>
+    </Grid>
+</ContentPage>
